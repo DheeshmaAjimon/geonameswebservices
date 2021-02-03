@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Geonames Webservices</title>
+    <meta name="keywords" content="HTML,CSS,JS,PHP">
+    <meta name="description" content="Geonames Webservice to find the Ocean or Sea details">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/> 
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css"/>
+  
+ 
+  </head>
+
+  <body>
+  
+
+    <div class="header1">
+
+      <h1>Geonames Webservices</h1>
+      <h2>Ocean</h2>
+      <p>Find the ocean/sea with given latitude and longitude.</p>
+
+    </div>
+
+    <div class="main1">
+      
+      <label for="latitude1">Latitude:</label>
+      <select id="latitude1" name="latitude1">
+        <option value="-33.1"> -33.13755</option>
+        <option value="34.5"> 34.553127</option>
+        <option value="43.4"> 43.413029</option>
+        <option value="-14.5"> -14.599413</option>
+        <option value="48.63">48.637164118 </option>
+      </select> 
+
+     
+
+      <label for="longitude1">Longitude:</label>
+        <select id="longitude1" name="longitude1">
+        <option value="81.8"> 81.8261722</option>
+        <option value="18.0"> 18.048012</option>
+        <option value="34.2"> 34.299316</option>
+        <option value="-28.6"> -28.673147</option>
+        <option value="-4.5"> -4.568831058</option>
+      </select>
+ 
+
+      <button type="button" id="search1">Search</button>
+      
+
+    </div>
+
+    <div id="results1">
+        <table>
+          <tr>
+            <td>Ocean/sea:</td>
+            <td id="oceanName"></td>
+          </tr>
+        </table>
+    </div> 
+
+    
+    <br></br>
+
+    <div class="header2">
+
+      <h2>CountryCode</h2>
+      <p>Find the ISO countrycode with given latitude and longitude.</p>
+
+    </div>
+
+    <div class="main2">
+      
+      <label for="latitude2">Latitude:</label>
+      <select id="latitude2" name="latitude2">
+        <option value="47.51"> 47.51</option>
+        <option value="56.13"> 56.13</option>
+        <option value="51.16"> 51.16</option>
+        <option value="55.38"> 55.38</option>
+        <option value="53.41"> 53.41</option>
+      </select> 
+
+     
+
+      <label for="longitude2">Longitude:</label>
+        <select id="longitude2" name="longitude2">
+        <option value="14.55"> 14.55</option>
+        <option value="-106.35"> -106.35</option>
+        <option value="10.45"> 10.45</option>
+        <option value="-3.43"> -3.43</option>
+        <option value="-8.24"> -8.24</option>
+      </select>
+ 
+
+      <button type="button" id="search2">Search</button>
+      
+
+    </div>
+
+     <div id="results2">
+        <table>
+          <tr>
+            <td>CountryCode:</td>
+            <td id="countryCode"></td>
+          </tr>
+        </table>
+    </div> 
+
+    
+    <br></br>
+
+    <div class="header3">
+
+      <h2>Address</h2>
+      <p>Finds the nearest street and address for a given latitude/longitude pair.</p>
+
+    </div>
+
+    <div class="main3">
+      
+      <label for="latitude3">Latitude:</label>
+      <select id="latitude3" name="latitude3">
+        <option value="-37.8122"> -37.8122</option>
+        <option value="46.1995"> 46.1995</option>
+        <option value="52.358"> 52.358</option>
+        <option value="50.0496"> 50.0496</option>
+        <option value="40.7851"> 40.7851</option>
+      </select> 
+
+     
+
+      <label for="longitude3">Longitude:</label>
+        <select id="longitude3" name="longitude3">
+        <option value="144.9626"> 144.9626</option>
+        <option value="6.1426"> 6.1426</option>
+        <option value="4.881"> 4.881</option>
+        <option value="19.9445"> 19.9445</option>
+        <option value="-73.9683"> -73.9683</option>
+      </select>
+ 
+
+      <button type="button" id="search3">Search</button>
+      
+
+    </div>
+
+    <div id="results3">
+        <table>
+
+          <tr>
+            <td>HouseNumber:</td>
+            <td id="houseNumber"></td>
+          </tr>
+          <tr>
+            <td>Locality:</td>
+            <td id="locality"></td>
+          </tr>
+          <tr>
+            <td>Street:</td>
+            <td id="street"></td>
+          </tr>
+          
+        </table>
+    </div> 
+
+
+    
+
+      
+     
+    <div id="preloader">
+
+    </div>
+    
+    <script type="application/javascript" src="vendors/jquery/jquery.min.js"> </script>
+    <script type="application/javascript" src="vendors/bootstrap/bootstrap.min.js"> </script>
+    <script type="application/javascript" src="js/script.js"> </script>
+    <script type="application/javascript" src="js/preloader.js"> </script>
+    
+    
+  </body>
+</html>
