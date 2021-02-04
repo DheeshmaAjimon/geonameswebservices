@@ -1,7 +1,7 @@
  $( "#search1" ).click(function() {
 
     $.ajax({
-        url: "index.php",
+        url: "oceanInfo.php",
         type: 'POST',
         dataType: 'json',
         
