@@ -1,7 +1,7 @@
  $( "#search1" ).click(function() {
 
     $.ajax({
-        url: "php/oceanInfo.php",
+        url: "oceanInfo.php",
         type: 'POST',
         dataType: 'json',
         
@@ -35,7 +35,7 @@
 $( "#search2" ).click(function() {
 
     $.ajax({
-        url: "php/countryInfo.php",
+        url: "countryInfo.php",
         type: 'POST',
         dataType: 'json',
         
@@ -69,7 +69,7 @@ $( "#search2" ).click(function() {
 $( "#search3" ).click(function() {
 
     $.ajax({
-        url: "php/addressInfo.php",
+        url: "addressInfo.php",
         type: 'POST',
         dataType: 'json',
         
